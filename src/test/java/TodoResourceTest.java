@@ -44,7 +44,7 @@ public class TodoResourceTest {
     }
 
     @Test
-    void getTodoSuccess() {
+    void getTodo() {
 
         when(DAO.findTodoById((long) 1)).thenReturn(todo);
         Todo found = EXT.target("/TodoManager/todos/1").request().get(Todo.class);
@@ -89,6 +89,7 @@ public class TodoResourceTest {
 
     @Test
     void putTodo() {
+
         List<String> listtasks1= new ArrayList<>();
         listtasks1.add("task11");
         listtasks1.add("task12");
