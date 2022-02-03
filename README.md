@@ -3,7 +3,9 @@ TodoManagerRestAPIWithTests is a RESTful API built using the Dropwizard Java fra
 
 # Todo
 The aim was to create a simple API that manages a list of TODO items of the following structure.
+
 A Todo contains an arbitrary list of subtasks and is structured as follows:
+
 {
   id
   name
